@@ -1,0 +1,152 @@
+/* pages/detail/detail.wxss */
+.product-card {
+  background: #fff;
+  padding-bottom: 15rpx;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+}
+
+.product-image {
+  width: 370rpx;
+  height: 370rpx;
+
+  display: block;  
+  margin: 0 auto;
+  padding-left: 100rpx;
+}
+
+.product-name {
+  font-size: 38rpx;
+  line-height: 53rpx;
+  font-weight: bold;
+  color: rgba(29, 29, 38, .8);
+  margin: 42rpx 49rpx 0;
+}
+
+.product-source {
+  margin: 5rpx 49rpx 0;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color: #8b8b8b;
+}
+
+.product-meta {
+  display: flex;
+  /* 垂直对齐 */
+  align-items: center;
+  /* 居右 */
+  justify-content: flex-end;
+  margin-right: 29rpx;
+}
+
+.product-money {
+  width: 47rpx;
+  height: 47rpx;
+  line-height: 47rpx;
+  text-align: center;
+
+  font-size: 34rpx;
+  font-weight: bold;
+  color: #34373d;
+  background: #f7e687;
+  border-radius: 50%;
+}
+
+.product-price {
+  margin: 0 10rpx;
+  font-size: 38rpx;
+}
+
+.info-card {
+  margin: 26rpx 27rpx;
+  padding: 0 26rpx;
+  background: #FFFFFF;
+  box-shadow: 0 2rpx 13rpx 5rpx rgba(0, 0, 0, 0.02);
+  border-radius: 13rpx;
+}
+
+.advantage-list {
+  padding: 43rpx 15rpx 39rpx;
+  border-bottom: 1px solid rgba(152, 151, 151, .2);
+}
+
+.advantage-item {
+  display: flex;
+  align-items: center;
+}
+
+.advantage-icon {
+  width: 22rpx;
+  height: 16rpx;
+}
+
+.advantage-text {
+  margin-left: 15rpx;
+  font-size: 28rpx;
+  line-height: 47rpx;
+  color: #34373d;
+}
+
+.comment-entry {
+  padding: 26rpx 10rpx 21rpx;
+}
+
+.comment-btn {
+  display: flex;
+  align-items: center;
+}
+
+.comment-title {
+  font-size: 30rpx;
+  line-height: 42rpx;
+  color: rgba(29, 29, 38, 0.8);
+  font-weight: bold;
+}
+
+.comment-count {
+  flex: 1;
+  text-align: right;
+  margin-right: 16rpx;
+
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color:#8b8b8b;
+}
+
+.comment-arrow {
+  width: 11rpx;
+  height: 18rpx;
+}
+
+.comment-preview {
+  margin-top: 26rpx;
+  font-size: 28rpx;
+  line-height: 40rpx;
+  color:#8b8b8b;
+}
+
+.opr-cnt {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  right: 0;
+}
+
+.opr-trolley, .opr-buy {
+  flex: 1;
+  height: 100rpx;
+  font-size: 30rpx;
+  line-height: 100rpx;
+  text-align: center;
+  color: #34373d;
+  font-weight: bold;
+}
+
+.opr-trolley {
+  background:rgba(245, 224, 105, .6);
+}
+
+.opr-buy {
+  background: #f5e069;
+}
