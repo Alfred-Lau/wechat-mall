@@ -15,9 +15,30 @@
   </button>
 </view>
 
-<view wx:else class='order-container'>
-  <image src='/images/order.png' class='empty-img'></image>
-  <text class='order-empty'>
-    暂时还没有订单
-  </text>  
+<view wx:else>
+  <view wx:if='{{!orderList.length}}' class='order-container'>
+    <image src='/images/order.png' class='empty-img'></image>
+    <text class='order-empty'>
+      暂时还没有订单
+    </text>  
+  </view>
+
+  <view wx:else>
+    <view class='order-header'>
+      <image class='order-header-img' src='/images/line-black.png'></image>
+      <view class='order-header-text'>已完成</view>
+    </view>
+    <view wx:for='{{orderList}}' wx:for-item='oItem' wx:key='id' class='list-container'>
+      <view wx:for='{{oItem.list}}' wx:key='id' wx:for-item='lItem' wx:for-index='lIndex' class='item-container'>
+        <image src='{{lItem.image}}' class='lItem-image'></image>
+        <view class='item-info'>
+          <text class='item-name'>{{lItem.name}}</text>
+          <text class='item-price'>￥{{lItem.price}}</text>
+          <text class='item-count'>x{{lItem.count}}</text>
+        </view>
+        <button class='rate' bindtap='handleRate'size='mini'>评价</button>
+      </view>
+    </view>
+  </view>
 </view>
+
