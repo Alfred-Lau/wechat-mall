@@ -1,2 +1,23 @@
 <!--pages/order/order.wxml-->
-<text>pages/order/order.wxml</text>
+<image class='bg' src='/images/bg.png'></image>
+
+<view wx:if='{{!userInfo}}'>
+  <view class='login-cnt'>
+    <view class='avatar'></view>
+    <view class='user-info'>
+      <view class='user-status'>未登录</view>
+      <view class='user-text'>点击微信登录后方可购物</view>
+    </view>
+  </view>
+
+  <button class="login-btn" open-type="getUserInfo" bindgetuserinfo="onTapLogin">
+  微信登录
+  </button>
+</view>
+
+<view wx:else class='order-container'>
+  <image src='/images/order.png' class='empty-img'></image>
+  <text class='order-empty'>
+    暂时还没有订单
+  </text>  
+</view>
